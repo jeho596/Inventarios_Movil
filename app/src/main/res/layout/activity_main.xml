@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ricdesc26.inventarios_movil.MainActivity">
+
+    <Button
+        android:text="Dar de baja un producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agregar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/quitar"
+        android:onClick="quitar (MainActivity)"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@color/colorBoton" />
+
+    <Button
+        android:text="Venta de productos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quitar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:id="@+id/venta"
+        android:onClick="vender (MainActivity)"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@color/colorBoton" />
+
+    <Button
+        android:text="agregar producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:id="@+id/agregar"
+        android:onClick="agregar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorBoton"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <Button
+        android:text="consulta de productos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/venta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:id="@+id/consulta"
+        android:onClick="mostrar (MainActivity)"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="@color/colorBoton" />
+</RelativeLayout>
